@@ -5,11 +5,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>myFirstPage</title>
+  <!-- Here we import our javascript code. -->
+  <script src="myFirstJavascript.js" type="text/javascript"></script>
 </head>
 
 <body>
   <header>
     <h1>Welcome</h1>
+    <h2>My first Javascript</h2>
+    <p>What we learn today:</p>
+    <ul>
+      <li>const</li>
+      <li>document</li>
+      <li>getElementById()</li>
+      <li>createElement()</li>
+      <li>innerHTML</li>
+      <li>appendChild</li>
+    </ul>
+    <hr />
+    <p>
+      Village name 1: <input id="villageName1" type='text' value="Pfungen" />
+    </p>
+    <p>
+      Village name 2: <input id="villageName2" type='text' value="Neftenbach" />
+    </p>
+    <p>
+      <!--
+        Here we refer to a javascript function.
+        The function's single argument is a string reference
+        to the input whose value we want.
+      -->
+      <input type='button' onclick='fillData()' value='Print'>
+    </p>
+
+    <div id='container'></div>
   </header>
 </body>
 
